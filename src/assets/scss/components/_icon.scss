@@ -43,15 +43,13 @@
 			display: inline-block;
 			border: solid 1px;
 			border-radius: 100%;
-
-			&:before {
-				display: block;
-				font-size: 1.25em;
-				width: 2em;
-				height: 2em;
-				text-align: center;
-				line-height: 2em;
-			}
+			font-size: 1.25em;
+			width: 2em;
+			padding: 0.4em;
+			height: 2em;
+			overflow: visible;
+			text-align: center;
+			line-height: 2em;
 		}
 
 		&.style1 {
@@ -100,6 +98,10 @@
 				}
 			}
 		}
+	}
+
+	.bottom-none {
+		border-bottom: none;
 	}
 
 	@mixin color-icon($p: null) {
