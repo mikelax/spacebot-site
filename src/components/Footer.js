@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { FaTwitter } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedinIn } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from "react-icons";
 
 const Footer = props => (
@@ -28,40 +25,34 @@ const Footer = props => (
           &#109;&#104;&#111;&#108;&#116;&#122;&#109;&#097;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
         </dd>
       </dl>
-      <ul className="icons">
-        <li>
-          <a href="https://twitter.com/mikelax" className="bottom-none">
-          <IconContext.Provider value={{ className: "icon alt" }}>
-            <FaTwitter><span className="label">Twitter</span></FaTwitter>
-          </IconContext.Provider>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/mikelax/" className="bottom-none"
-          >
-          <IconContext.Provider value={{ className: "icon alt" }}>
-            <FaInstagram><span className="label">Instagram</span></FaInstagram>
-          </IconContext.Provider>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/mikelax" className="bottom-none">
-          <IconContext.Provider value={{ className: "icon alt" }}>
-            <FaGithub><span className="label">Github</span></FaGithub>
-          </IconContext.Provider>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/mholtzman/" className="bottom-none"
-          >
-          <IconContext.Provider value={{ className: "icon alt" }}>
-            <FaLinkedinIn><span className="label">LinkedIn</span></FaLinkedinIn>
-          </IconContext.Provider>
-          </a>
-        </li>
-      </ul>
+      <IconContext.Provider value={{ className: "icon alt" }}>
+        <ul className="icons">
+          <li>
+            <a href="https://twitter.com/mikelax" className="bottom-none">
+              <FaTwitter><span className="label">Twitter</span></FaTwitter>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/mikelax/" className="bottom-none"
+            >
+              <FaInstagram><span className="label">Instagram</span></FaInstagram>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/mikelax" className="bottom-none">
+              <FaGithub><span className="label">Github</span></FaGithub>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mholtzman/" className="bottom-none"
+            >
+              <FaLinkedinIn><span className="label">LinkedIn</span></FaLinkedinIn>
+            </a>
+          </li>
+        </ul>
+      </IconContext.Provider>
     </section>
     <p className="copyright">
       <Link to="/">Home</Link> | <Link to="/support">Support</Link> |{' '}

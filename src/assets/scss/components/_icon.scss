@@ -26,17 +26,14 @@
 			padding: 0.65em;
 			margin: 0 0 _size(element-margin) 0;
 			cursor: default;
-
-			&:before {
-				display: inline-block;
-				font-size: 6.25rem;
-				width: 2.25em;
-				height: 2.25em;
-				line-height: 2.2em;
-				border-radius: 100%;
-				border: solid 1px;
-				text-align: center;
-			}
+			font-size: 6.25rem;
+			width: 2.25em;
+			height: 2.25em;
+			line-height: 2.2em;
+			border-radius: 100%;
+			border: solid 1px;
+			text-align: center;
+			overflow: visible;
 		}
 
 		&.alt {

@@ -6,6 +6,9 @@ import Header from '../components/Header'
 import Nav from '../components/Nav'
 import curiosityImage from '../assets/images/curiosity-profile.jpeg'
 
+import { FaRocket, FaHandPointUp  } from 'react-icons/fa';
+import { IconContext } from "react-icons";
+
 class Index extends React.Component {
   state = {
     stickyNav: false
@@ -74,20 +77,24 @@ class Index extends React.Component {
                 <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
               </a>
             </div>
-            <ul className="features">
-              <li>
-                <span className="icon major style1 fa-hand-o-up" />
-                <h3>Click the Add Button</h3>
-                <p>One click process to install to your Slack Account.</p>
-              </li>
-              <li>
-                <span className="icon major style5 fa-rocket" />
-                <h3>Success!!</h3>
-                <p>
-                  Type the slash command <code>/spacebot help</code> to get started.
-                </p>
-              </li>
-            </ul>
+              <ul className="features">
+              <IconContext.Provider value={{ className: "icon major style1" }}>
+                <li>
+                  <FaHandPointUp />
+                  <h3>Click the Add Button</h3>
+                  <p>One click process to install to your Slack Account.</p>
+                </li>
+              </IconContext.Provider>
+              <IconContext.Provider value={{ className: "icon major style5" }}>
+                <li>
+                  <FaRocket />
+                  <h3>Success!!</h3>
+                  <p>
+                    Type the slash command <code>/spacebot help</code> to get started.
+                  </p>
+                </li>
+                </IconContext.Provider>
+              </ul>
             <footer className="major">
               <ul className="actions">
                 <li>
