@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { FaTwitter, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { IconContext } from "react-icons";
 
 const Footer = props => (
   <footer id="footer">
@@ -23,34 +25,34 @@ const Footer = props => (
           &#109;&#104;&#111;&#108;&#116;&#122;&#109;&#097;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
         </dd>
       </dl>
-      <ul className="icons">
-        <li>
-          <a href="https://twitter.com/mikelax" className="icon fa-twitter alt">
-            <span className="label">Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/mikelax/"
-            className="icon fa-instagram alt"
-          >
-            <span className="label">Instagram</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/mikelax" className="icon fa-github alt">
-            <span className="label">GitHub</span>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/mholtzman/"
-            className="icon fa-linkedin alt"
-          >
-            <span className="label">LinkedIn</span>
-          </a>
-        </li>
-      </ul>
+      <IconContext.Provider value={{ className: "icon alt" }}>
+        <ul className="icons">
+          <li>
+            <a href="https://twitter.com/mikelax" className="bottom-none">
+              <FaTwitter><span className="label">Twitter</span></FaTwitter>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/mikelax/" className="bottom-none"
+            >
+              <FaInstagram><span className="label">Instagram</span></FaInstagram>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/mikelax" className="bottom-none">
+              <FaGithub><span className="label">Github</span></FaGithub>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mholtzman/" className="bottom-none"
+            >
+              <FaLinkedinIn><span className="label">LinkedIn</span></FaLinkedinIn>
+            </a>
+          </li>
+        </ul>
+      </IconContext.Provider>
     </section>
     <p className="copyright">
       <Link to="/">Home</Link> | <Link to="/support">Support</Link> |{' '}
