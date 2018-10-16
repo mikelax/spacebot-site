@@ -15,7 +15,7 @@ yarn install
 yarn develop
 ```
 
-You can read more in the [CONTRIBUTING document](./github/CONTRIBUTING.md).
+You can read more in the [CONTRIBUTING document](./.github/CONTRIBUTING.md).
 
 ## License
 
