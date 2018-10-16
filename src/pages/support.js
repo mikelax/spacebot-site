@@ -29,7 +29,8 @@ class Support extends React.Component {
             </p>
 
             <div id="contact-form">
-              <form id="contact" method="post" action="https://api.slashspacebot.com/prod/contact">
+              <form name="contact" method="post" netlify>
+                <input type="hidden" name="form-name" value="contact" />
                 <fieldset>
                   <label for="name">Name</label>
                   <input type="text" name="name" required placeholder="Name" />
