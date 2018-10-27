@@ -122,20 +122,26 @@ class Index extends React.Component {
                 Astronomy Picture of the Day
               </a> is one of NASA's most popular websites. Each day a different image highlighting our universe with a brief description will be featured.
             </p>
-            <header className="major">
-              <code>/spacebot apod</code> Display today's APOD image
+            <p className="major">
+              <code>/spacebot apod</code>
+              Display today's APOD image
+              <br />
               <br />
               <code>
                 /spacebot random
               </code> Display a random APOD image from anytime
               <br />
+              <br />
               <code>
                 /spacebot apod date
-              </code> Display the APOD image for the given date. The format for date is <pre
-              >
-                YYYY-MM-DD
-              </pre>
-            </header>
+              </code> Display the APOD image for the given date.
+              <br />
+              <br />
+              The format for date is
+              <code>
+              YYYY-MM-DD
+              </code>
+            </p>
 
             <h3>Mars Rovers Photos</h3>
             <p className="content">
@@ -143,22 +149,26 @@ class Index extends React.Component {
                 Mars 2020 Rover
               </a>, currently being developed by NASA.
             </p>
-            <header className="major">
+            <p className="major">
               <code>/spacebot rovers help</code>
               Display the rovers sub-command help
+              <br />
               <br />
               <code>/spacebot rovers info</code>
               Display information about the three rovers with links for even more information.
               <br />
+              <br />
               <code>/spacebot rovers cameras list</code>
               Display the list of onboard cameras. Theses can be used to filter the images. You can also use a value of 'all' to get images from all cameras.
+              <br />
               <br />
               <code>/spacebot rovers photos</code>
               This will display the most recent images from the <strong>Curiosity</strong> Mars rover. It will include a mix of photos from all available cameras.
               <br />
+              <br />
               <code>/spacebot rovers photos name camera date</code>
               Display a list of images from the given rover/camera/date combination. One or more parameters can be omitted and appropriate defaults will be used. Please note that images may not be available for a given rover/camera/date combination.
-            </header>
+            </p>
           </section>
 
           <section id="cta" className="main special">
