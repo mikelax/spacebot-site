@@ -139,7 +139,9 @@ class Index extends React.Component {
 
             <h3>Mars Rovers Photos</h3>
             <p className="content">
-              The rovers sub-command returns data and images from the three recent Mars Exploration Rovers (MER). Spirit and Opportunity were launched in mid 2003 as a pair to explore opposite sides of Mars. Curiosity is a more recent rover launched in 2011. You can read more about the upcoming <a href="https://mars.nasa.gov/mars2020/mission/rover/">
+              The rovers sub-command returns data and images from the three recent Mars Exploration Rovers (MER). 
+              Spirit and Opportunity were launched in mid 2003 as a pair to explore opposite sides of Mars. 
+              Curiosity is a more recent rover launched in 2011. You can read more about the upcoming <a href="https://mars.nasa.gov/mars2020/mission/rover/">
                 Mars 2020 Rover
               </a>, currently being developed by NASA.
             </p>

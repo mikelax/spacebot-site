@@ -37,6 +37,15 @@
 			.slack {
 				padding: 0.5em;
 			}
+			.major h2 {
+				text-align: center;
+			}
+			.major h3 {
+				font-size: 52px;
+			}
+			.major {
+				text-align: justify;
+			}
 		}
 
 		@include breakpoint(large) {
