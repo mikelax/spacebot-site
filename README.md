@@ -1,6 +1,6 @@
 # spacebot-site
 
-This repo is the [public wbsite](https://slashspacebot.netlify.app/) for spacebot, A Slack Bot for exploring space.
+This repo is the [public website](https://slashspacebot.netlify.app/) for spacebot, A Slack Bot for exploring space.
 
 ## Website Technology
 
