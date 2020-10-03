@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { FaTwitter, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { IconContext } from "react-icons";
+import { FaTwitter, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { IconContext } from 'react-icons'
 
-const Footer = props => (
+const Footer = (props) => (
   <footer id="footer">
     <section>
       <h2>Built by Michael Holtzman</h2>
@@ -25,30 +25,40 @@ const Footer = props => (
           &#109;&#104;&#111;&#108;&#116;&#122;&#109;&#097;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
         </dd>
       </dl>
-      <IconContext.Provider value={{ className: "icon alt" }}>
+      <IconContext.Provider value={{ className: 'icon alt' }}>
         <ul className="icons">
           <li>
             <a href="https://twitter.com/mikelax" className="bottom-none">
-              <FaTwitter><span className="label">Twitter</span></FaTwitter>
+              <FaTwitter>
+                <span className="label">Twitter</span>
+              </FaTwitter>
             </a>
           </li>
           <li>
             <a
-              href="https://www.instagram.com/mikelax/" className="bottom-none"
+              href="https://www.instagram.com/mikelax/"
+              className="bottom-none"
             >
-              <FaInstagram><span className="label">Instagram</span></FaInstagram>
+              <FaInstagram>
+                <span className="label">Instagram</span>
+              </FaInstagram>
             </a>
           </li>
           <li>
             <a href="https://github.com/mikelax" className="bottom-none">
-              <FaGithub><span className="label">Github</span></FaGithub>
+              <FaGithub>
+                <span className="label">Github</span>
+              </FaGithub>
             </a>
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/mholtzman/" className="bottom-none"
+              href="https://www.linkedin.com/in/mholtzman/"
+              className="bottom-none"
             >
-              <FaLinkedinIn><span className="label">LinkedIn</span></FaLinkedinIn>
+              <FaLinkedinIn>
+                <span className="label">LinkedIn</span>
+              </FaLinkedinIn>
             </a>
           </li>
         </ul>

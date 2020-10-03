@@ -7,7 +7,7 @@ import '../assets/scss/main.scss'
 
 class Template extends React.Component {
   state = {
-    loading: 'is-loading'
+    loading: 'is-loading',
   }
 
   static propTypes = {

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const HeaderGeneric = ({title, subTitle}) => (
+const HeaderGeneric = ({ title, subTitle }) => (
   <header id="header">
     <h1>{title}</h1>
     {subTitle && <p>{subTitle}</p>}
@@ -12,11 +12,11 @@ HeaderGeneric.propTypes = {
   /** The page title */
   title: PropTypes.string.isRequired,
   /** Optional sub-heading Text displayed below Title  */
-  subTitle: PropTypes.string
+  subTitle: PropTypes.string,
 }
 
 HeaderGeneric.defaultProps = {
-  subTitle: null
+  subTitle: null,
 }
 
 export default HeaderGeneric
