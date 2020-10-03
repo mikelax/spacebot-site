@@ -7,7 +7,8 @@ import HeaderGeneric from '../../components/HeaderGeneric'
 
 class Success extends React.Component {
   render() {
-    return <Layout>
+    return (
+      <Layout>
         <Helmet title="/spacebot - Installation Success" />
         <HeaderGeneric title="Spacebot Successfully Installed" />
         <div id="main">
@@ -16,15 +17,21 @@ class Success extends React.Component {
             <p>
               <span role="img" aria-label="Rocket">
                 🚀
-              </span> spacebot is configured and awaiting your commands.
+              </span>{' '}
+              spacebot is configured and awaiting your commands.
             </p>
             <p>
-              Please see the <Link to="/">usage instructions</Link> for a list of commands and things to explore.
+              Please see the <Link to="/">usage instructions</Link> for a list
+              of commands and things to explore.
             </p>
-            <p>Try <code>/spacebot apod random</code> to jump right in and get started!</p>
+            <p>
+              Try <code>/spacebot apod random</code> to jump right in and get
+              started!
+            </p>
           </section>
         </div>
       </Layout>
+    )
   }
 }
 
