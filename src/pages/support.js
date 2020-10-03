@@ -33,22 +33,22 @@ class Support extends React.Component {
                 <input type="hidden" name="form-name" value="contact" />
                 <input type="hidden" name="bot-field" />
                 <fieldset>
-                  <label for="name">Name</label>
+                  <label htmlFor="name">Name</label>
                   <input type="text" name="name" required placeholder="Name" />
 
                   <br />
-                  <label for="email">E-mail</label>
+                  <label htmlFor="email">E-mail</label>
                   <input type="email" name="email" required placeholder="E-mail" />
 
                   <br />
-                  <label for="slackteam">Slack Team (optional)</label>
+                  <label htmlFor="slackteam">Slack Team (optional)</label>
                   <input type="text" name="slackteam" placeholder="Slack Team Name or URL" />
 
                   <br />
-                  <label for="message">Comments</label>
+                  <label htmlFor="message">Comments</label>
                   <textarea name="message" />
 
-                  <input type="submit" class="btn" name="submit" id="submit" value="Send Message" />
+                  <input type="submit" className="btn" name="submit" id="submit" value="Send Message" />
                 </fieldset>
               </form>
             </div>
